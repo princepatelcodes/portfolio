@@ -1,8 +1,10 @@
 import { Center, Heading, Image, Text, VStack } from '@chakra-ui/react' 
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
     <>
+    <Navbar />
       <Center>
         <VStack>
           <Heading>Prince Patel</Heading>
