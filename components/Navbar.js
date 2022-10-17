@@ -276,16 +276,24 @@ import {
     //   ],
     // },
     {
+      label: "Education",
+      href: "#education",
+    },
+    {
       label: "Skills",
       href: "#skills",
     },
     {
       label: "Projects",
-      href: "#",
+      href: "#projects",
+    },
+    {
+      label: "Blogs",
+      href: "#blogs",
     },
     {
       label: "Work",
-      href: "#",
+      href: "#work",
     },
     {
       label: "Freelance",
