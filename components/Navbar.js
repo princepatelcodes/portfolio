@@ -27,8 +27,10 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box>
+      <Box  position='fixed' w='100%'>
         <Flex
+        // pos='relative'
+        // position='static'
           bg={useColorModeValue("gray.800", "black.800")}
           color={useColorModeValue("white", "white")}
           minH={"60px"}
@@ -111,11 +113,11 @@ import {
                   fontWeight={600}
                   color='gray.200'
                   _hover={{
-                    bg: "gray.200",
+                    bg: "whatsapp.200",
                     borderRadius: 6,
                     fontWeight:700,
                     textDecoration: "none",
-                    color: linkHoverColor,
+                    color: 'gray.700',
                   }}
                 >
                   {navItem.label}
