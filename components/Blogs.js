@@ -7,7 +7,7 @@ export default function Blogs() {
     <Heading>Here are some Blogs</Heading>
     <Text>This is rendered using a blogs renderer that I created myself 😇.</Text>
     {/*  */}
-    <SimpleGrid p='6' columns={[1,2,3,4]} spacing='4'>
+    <SimpleGrid p='6' columns={[1,2,3,3]} spacing='4'>
  
    
     <Box 

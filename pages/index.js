@@ -1,6 +1,7 @@
 import { Box, Center, Heading, Image, Text, VStack } from '@chakra-ui/react' 
 import Blogs from '../components/Blogs'
 import Navbar from '../components/Navbar'
+import Education from '../components/Education'
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
           <Heading>Prince Patel</Heading>
           <Text>Finally Added my Website to github page </Text>
           <Image src="https://c.tenor.com/918EwUygx1IAAAAC/mission-impossible-we-got-this.gif" alt='Success' />
-<Blogs />
+            <Heading id='education'>My Education</Heading>
+            <Text>Here is my educational journey 😇.</Text>
+            <Education />
+            <Blogs />
           <Box
           sx={{
             height:'800px'

@@ -27,7 +27,7 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box  position='fixed' w='100%'>
+      <Box  position='fixed' w='100%' sx={{ zIndex : 1000,}}>
         <Flex
         // pos='relative'
         // position='static'
