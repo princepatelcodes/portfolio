@@ -27,19 +27,26 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box  position='fixed' w='100%' sx={{ zIndex : 1000,}}>
+      <Box  position='fixed'  width={'100%'}   borderRadius='md' sx={{ zIndex : 1000, }}>
         <Flex
         // pos='relative'
         // position='static'
-          bg={useColorModeValue("gray.800", "black.800")}
+          margin='20px'
+          bg={useColorModeValue("white.800", "white.800")}
           color={useColorModeValue("white", "white")}
           minH={"60px"}
+          borderRadius="md"
           py={{ base: 2 }}
           px={{ base: 4 }}
-          borderBottom={1}
+          // borderBottom={1}
           borderStyle={"solid"}
           borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
+          css={{
+              backdropFilter : 'blur(10px)'
+          }}
+          // __css={{
+          // }}
         >
           <Flex
             flex={{ base: 1, md: "auto" }}
@@ -56,8 +63,8 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }} alignItems='center'>
-            {/* <Image p={2} src={logo} height='20' /> */}
-            <Text>Prince</Text>
+            <Image p={2} src={'/prince_logo.png'} width='32' />
+            {/* <Text>Prince</Text> */}
   
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
               <DesktopNav />
