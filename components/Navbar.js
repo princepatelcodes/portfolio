@@ -32,7 +32,7 @@ import {
         // pos='relative'
         // position='static'
           margin='20px'
-          bg={useColorModeValue("white.800", "white.800")}
+          bg={useColorModeValue("whiteAlpha.400", "white.800")}
           color={useColorModeValue("white", "white")}
           minH={"60px"}
           borderRadius="md"
@@ -43,7 +43,7 @@ import {
           borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
           css={{
-              backdropFilter : 'blur(10px)'
+              backdropFilter : 'blur(20px)'
           }}
           // __css={{
           // }}
@@ -102,7 +102,7 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue("gray.600", "gray.200");
+    const linkColor = useColorModeValue("gray.800", "gray.200");
     const linkHoverColor = useColorModeValue("gray.800", "white");
     const popoverContentBgColor = useColorModeValue("white", "gray.800");
   
@@ -118,7 +118,7 @@ import {
                   href={navItem.href ?? "#"}
                   fontSize={"md"}
                   fontWeight={600}
-                  color='gray.200'
+                  color={linkColor}
                   _hover={{
                     bg: "whatsapp.200",
                     borderRadius: 6,
@@ -301,10 +301,6 @@ import {
     {
       label: "Work",
       href: "#work",
-    },
-    {
-      label: "Freelance",
-      href: "#freelance",
     },
   ];
   
