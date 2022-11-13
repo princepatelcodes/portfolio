@@ -58,7 +58,7 @@ export default function Profile() {
             <Box flex='1' width={'90%'} mx='auto'>
                 <SimpleGrid columns={[1, 1, 2, 3]} spacing='6' width='100%' mx='auto'>
                     {links.map((link) => (
-                        <Link href={link.href}
+                        <Link key={link.name} href={link.href}
                             textDecoration='none'
                             _hover={{
                                 textDecoration: 'none'
