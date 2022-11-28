@@ -45,7 +45,7 @@ const Education = () => {
     const isDesktop = useBreakpointValue({ base: false, md: true });
 
     return (
-            <Container maxWidth="6xl"  bg='white'  p={{ base: 2, sm: 10 }}
+            <Container maxWidth="6xl"  bg='gray.100' rounded='xl'  p={{ base: 2, sm: 10 }}
                 mt={3}
                 css={{
                     '&::-webkit-scrollbar': {
