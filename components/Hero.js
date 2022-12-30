@@ -29,9 +29,9 @@ export default function Hero() {
                     <TypeAnimation
                         sequence={[
                             'Student',
-                            1000, // Waits 1s
+                            600, // Waits 1s
                             'Student , Full Stack Developer', // Deletes 'None' and types 'After'
-                            1000, // Waits 2s
+                            600, // Waits 2s
                             'Student , Full Stack Developer, App Developer', // Types 'Three' without deleting 'Two'
                             () => {
                                 console.log('Done typing!'); // Place optional callbacks anywhere in the array
@@ -39,21 +39,21 @@ export default function Hero() {
                         ]}
                         wrapper="div"
                         cursor={true}
-                        repeat={2}
+                        repeat={0}
                     />
                 </Heading>
                 <Heading textAlign='center' fontSize={24} py='2'>
                     <TypeAnimation
                         sequence={[
                             'And',
-                            1000, // Waits 1s
-                            'And an', // Deletes 'None' and types 'After'
-                            1000, // Waits 2s
-                            'And a Ever',  
-                            1000, // Waits 2s
-                            'And a Ever Learning',  
-                            1000, // Waits 2s
-                            'And a Ever Learning Student',  
+                            500, 
+                            'an',  
+                            500, 
+                            'Ever',  
+                            1000,
+                            'Learning',  
+                            1000,
+                            'Student',  
                             () => {
                                 console.log('Done typing!'); // Place optional callbacks anywhere in the array
                             }
